@@ -10,31 +10,27 @@ import {
 } from 'react-router-dom';
 import Header from "../components/header.jsx"
 import Footer from "../components/footer.jsx"
+import DrawMap from "../components/drawmap.jsx"
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
+import Leaflet from 'leaflet/dist/leaflet.css'
 
 
-class Map extends React.Component{
-    render(){
-        return <div className={"map"}>
-            <img src={"./images/mapa.jpg"}/>
-        </div>
 
-    }
-}
 class App extends React.Component{
     render(){
         return <div>
             <Header/>
-            <Map/>
+            <DrawMap/>
             <Footer/>
         </div>
     }
 }
 
 
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener('DOMContentLoaded', function(){
     ReactDOM.render(
-        <App/>,
+        <App />,
         document.getElementById('app')
-
-    );
+    )
 });
+
