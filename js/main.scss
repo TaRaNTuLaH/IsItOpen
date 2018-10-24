@@ -1,6 +1,82 @@
-.testing{
-  color:red;
-  div{
-    color: yellow;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+$footerAndHeaderColor : #7B8A8C;
+.header{
+  max-height: 150px;
+  background-color: #5C6D70;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+}
+.navBar{
+  list-style: none;
+
+  li{
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    display: inline-block;
+    margin: 40px;
+    border: 2px solid #DADFF7;
+    padding: 15px;
+    border-radius: 30px;
+    color: #DADFF7;
+    &:hover{
+        background-color: #444;
+        color: #eee;
+        transition: 1.5s;
+    }
   }
+}
+.logo{
+  height:150px;
+  img {
+    height: 100%;
+    width: 150px;
+  }
+}
+
+/////////////////////////////////////////////////////////
+
+.map{
+  border: 1px solid red;
+  height:700px;
+  img{
+    height:698px;
+    width: 1845px;
+  }
+}
+.footer{
+  background-color: $footerAndHeaderColor;
+  height: 100px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.getInTouch{
+
+  li{
+    list-style:none;
+    display: inline-block;
+    margin: 30px 40px 0;
+    font-size: 40px;
+  }
+  .fa-linkedin{
+    color:  #176BB7;
+  }
+  .fa-github{
+    color: #292D32;
+  }
+  .fa-facebook-square{
+    color: #5054B4;
+  }
+}
+.rights{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 60px;
+  font-size: 30px;
 }
