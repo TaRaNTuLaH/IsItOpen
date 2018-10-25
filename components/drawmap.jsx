@@ -9,6 +9,7 @@ class DrawMap extends React.Component {
         this.handleOnClick = this.handleOnClick.bind(this);
 
     }
+
     state = {
         lat: 51.1107811,
         lng: 17.016858,
@@ -34,7 +35,18 @@ class DrawMap extends React.Component {
         })
     }
 
-
+    componentDidMount(){
+        this.props.database.getData((data)=>{
+            const arr = [];
+            for(const key in data){
+                arr.push({lat:data[key].Lattitude,
+                    lng:data[key].Longitude})
+            }
+            this.setState({
+                markers: arr
+            })
+        })
+    }
 
     render() {
         const position = [this.state.lat, this.state.lng];

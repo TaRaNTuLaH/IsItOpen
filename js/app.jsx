@@ -17,7 +17,9 @@ class App extends React.Component{
         this.firebase = new FireBase;
     }
 
+
     render(){
+
         return <div>
             <Header/>
             <DrawMap database={this.firebase}/>

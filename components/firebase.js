@@ -28,7 +28,6 @@ class FireBase {
 
     getData( callback ){
         this.ref.once("value").then(function(data) {
-            console.log(data.val());
             callback(data.val() );
         },function (error) {
             console.log("Error: " + error.code);
