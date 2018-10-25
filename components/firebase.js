@@ -6,12 +6,12 @@ class FireBase {
 
 }
      config = {
-        apiKey: "AIzaSyAXyugUk6GTppEmhoAndjGWGaLWOmCv9WQ",
-        authDomain: "isitopen-project.firebaseapp.com",
-        databaseURL: "https://isitopen-project.firebaseio.com",
-        projectId: "isitopen-project",
-        storageBucket: "isitopen-project.appspot.com",
-        messagingSenderId: "341865480957"
+        apiKey: "SORRY BUT YOU NEED YOUR OWN",
+        authDomain: "SORRY BUT YOU NEED YOUR OWN",
+        databaseURL: "SORRY BUT YOU NEED YOUR OWN",
+        projectId: "SORRY BUT YOU NEED YOUR OWN",
+        storageBucket: "SORRY BUT YOU NEED YOUR OWN",
+        messagingSenderId: "SORRY BUT YOU NEED YOUR OWN"
     };
 
 
