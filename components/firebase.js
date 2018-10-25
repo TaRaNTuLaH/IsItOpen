@@ -3,11 +3,16 @@ class FireBase {
     firebase.initializeApp(this.config);
     this.database = firebase.database();
     this.ref = this.database.ref('coordinates');
+
 }
      config = {
-        
+        apiKey: "AIzaSyAXyugUk6GTppEmhoAndjGWGaLWOmCv9WQ",
+        authDomain: "isitopen-project.firebaseapp.com",
+        databaseURL: "https://isitopen-project.firebaseio.com",
+        projectId: "isitopen-project",
+        storageBucket: "isitopen-project.appspot.com",
+        messagingSenderId: "341865480957"
     };
-
 
 
 
@@ -20,16 +25,25 @@ class FireBase {
     }
 
 
+
+    getData( callback ){
+        this.ref.once("value").then(function(data) {
+            console.log(data.val());
+            callback(data.val() );
+        },function (error) {
+            console.log("Error: " + error.code);
+        });
+    }
     showPosition(position) {
-         let data = {
+         this.data = {
                 latitude: "Latitude",
                 latitudeGeo: position.coords.latitude,
                 longitude: "Longitude",
                 longitudeGeo: position.coords.longitude
             };
-        this.ref.push(data);
-        console.log(data.latitude);
-        console.log(data.latitudeGeo)
+        this.ref.push(this.data);
+        console.log(this.data.latitude);
+        console.log(this.data.latitudeGeo)
     }
 }
 

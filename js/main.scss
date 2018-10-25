@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
+
 
 $footerAndHeaderColor : #7B8A8C;
 .header{
@@ -51,7 +51,6 @@ $footerAndHeaderColor : #7B8A8C;
 }
 
 .getInTouch{
-
   li{
     list-style:none;
     display: inline-block;
@@ -74,3 +73,54 @@ $footerAndHeaderColor : #7B8A8C;
   font-size: 30px;
 }
 
+
+.form{
+
+  background-color: #eee;
+  z-index: 2;
+  font-family: 'Gloria Hallelujah', cursive;
+  width: 248px;
+  height: 308px;
+  top: 175px;
+  position: fixed;
+  right: 25px;
+  box-shadow: 21px 10px 34px 0 rgba(0,0,0,0.54);
+  span{
+    margin-left: 230px;
+  }
+  h3{
+    text-align:center;
+  }
+  label{
+    margin-left: 2px;
+  }
+}
+
+.open{
+  width: 40px;
+}
+.shop {
+  width: 190px;
+}
+.additional{
+  text-align: start;
+}
+.address{
+  width: 50px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+.additional{
+  width:248px;
+  height: 150px;
+
+
+}
+
+.btn-send{
+  margin-top: 9px;
+  width:248px;
+}
